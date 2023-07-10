@@ -1,0 +1,8 @@
+dog : <i class="fa-solid fa-dog"></i>
+money : <i class="fa-solid fa-money-bill-wave"></i>
+info : <i class="fa-solid fa-info"></i>
+star : <i class="fa-solid fa-star"></i>
+person : <i class="fa-solid fa-person"></i>
+graph : <i class="fa-solid fa-chart-line"></i>
+fire : <i class="fa-solid fa-fire"></i>
+heart : <i class="fa-solid fa-heart"></i>

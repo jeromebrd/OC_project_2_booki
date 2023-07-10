@@ -1,0 +1,359 @@
+/* general */
+:root {
+  --blue: #0065fc;
+  --blue-light: #deebff;
+  --grey: #d9d9d9;
+  --grey-light: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+i {
+  color: var(--blue);
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  cursor: pointer;
+}
+h2 {
+  font-size: 22px;
+}
+img {
+  max-width: 100%;
+}
+
+/* generic */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.sub-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.greylight {
+  color: var(--grey-light);
+}
+.cards {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.euro-bold {
+  font-weight: 700;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  padding: 30px 0;
+  width: 61px;
+}
+
+header nav {
+  align-self: flex-start;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+header nav li {
+  margin: 0 25px;
+}
+header nav a {
+  display: block;
+  height: 100%;
+  padding: 20px 0;
+  border-top: 2px solid #fff;
+  transition: color 0.2s ease-out, border 0.3s ease-out;
+}
+header nav a:hover {
+  border-top: 2px solid var(--blue);
+  color: var(--blue);
+}
+/* section : infogroup */
+.infogroup {
+  padding-top: 30px;
+}
+.infogroup-headline h1 {
+  padding: 0 0 8px;
+}
+.infogroup form {
+  margin: 35px 0;
+  display: flex;
+  /* border: 1px solid red; */
+}
+/* icon location */
+.infogroup form .icon-location {
+  border: 1px solid var(--grey-light);
+  font-size: 18px;
+  padding: 15px 16px;
+  background: var(--grey-light);
+  border-radius: 15px 0 0 15px;
+}
+.infogroup form .icon-location i {
+  color: #000;
+}
+/* input location */
+.infogroup form input {
+  outline: none;
+  font-size: 18px;
+  padding: 15px 16px;
+  border: 1px solid var(--grey-light);
+  font-weight: 700;
+}
+.infogroup form input::placeholder {
+  font-weight: 100;
+}
+/* button rechercher */
+.infogroup form button {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 15px 16px;
+  border-radius: 0 15px 15px 0;
+}
+.infogroup form button i {
+  display: none;
+  color: white;
+}
+/* .infogroup form button span {
+  display: none;
+} */
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.filter-bar .filters-title {
+  margin-right: 20px;
+}
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.filter-list button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: 2px solid var(--grey);
+  background: #fff;
+  border-radius: 25px;
+  padding: 4px 19px;
+  height: 50px;
+  transition: all 0.2s ease-out;
+  gap: 10px;
+}
+.filter-list button:hover {
+  background: var(--blue-light);
+}
+.filter-list button i {
+  font-size: 22px;
+}
+.filter-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+/* infobar */
+.infobar {
+  display: flex;
+  align-items: center;
+}
+.infobar i {
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+  padding: 7px 12px;
+  margin-right: 10px;
+}
+
+/* Section : offers */
+.offers {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.offers main {
+  padding: 30px;
+  background: var(--grey-light);
+  border-radius: 15px;
+  flex: 1;
+  min-width: 300px;
+}
+/* offer Card */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+.offer-card {
+  max-width: 250px;
+  padding-bottom: 15px;
+  padding: 5px 5px 15px 5px;
+}
+.offer-card .container-img {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  max-height: 124px;
+  margin-bottom: 5px;
+}
+.offer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.offer-card .desc-offer {
+  padding: 0 15px;
+}
+.offer-card .desc-offer p {
+  margin: 8px 0;
+}
+.desc-offer p {
+  font-size: 14px;
+}
+
+/* Most popular */
+.offers aside {
+  padding: 30px;
+  background: var(--grey-light);
+  border-radius: 15px;
+  min-width: 430px;
+}
+.popular-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mostpop-container {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.mostpop-card {
+  display: flex;
+  align-items: center;
+  max-width: 369px;
+  height: 144px;
+  padding: 5px;
+}
+.mostpop-card .container-img {
+  height: 100%;
+  width: 170px;
+  overflow: hidden;
+}
+
+.mostpop-card img {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mostpop-card .desc-offer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 5px 5px 15px;
+}
+.mostpop-card .desc-offer h4 {
+  margin-bottom: 5px;
+}
+
+/* Activities */
+.activities {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.activities > div {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.activities h3 {
+  font-size: 16px;
+}
+.activities-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card-activity {
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  flex: 1 0 0;
+  max-height: 440px;
+  min-width: 300px;
+}
+.card-activity .container-img {
+  height: 380px;
+  width: 100%;
+  overflow: hidden;
+}
+.card-activity img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-activity h3 {
+  padding: 20px 19px;
+}
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: var(--grey-light);
+}
+footer ul {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
