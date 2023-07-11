@@ -1,0 +1,81 @@
+/* tablet */
+@media (max-width: 1024px) {
+  .offers {
+    flex-direction: column;
+  }
+  .offers aside {
+    width: 100%;
+  }
+
+  .mostpop-container {
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .activities-container {
+    flex-wrap: wrap;
+  }
+  /* .activity-card {
+    height: 100%;
+  } */
+  .activity-card .container-img {
+    height: 200px;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav li {
+    margin: 0;
+    width: 50%;
+    text-align: center;
+    border-bottom: 2px solid var(--grey-light);
+    transition: border 0.2s ease-in;
+  }
+  header nav li:hover {
+    border-bottom: 2px solid var(--blue);
+  }
+  header nav a {
+    border-top: 0;
+  }
+  header nav a:hover {
+    border-top: 0;
+  }
+  .infogroup form button {
+    border-radius: 15px;
+  }
+  .infogroup form button i {
+    display: block;
+  }
+  .infogroup form button span {
+    display: none;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .offer-card,
+  .mostpop-card,
+  .activity-card {
+    max-width: none;
+    width: 100%;
+  }
+
+  .activity-card {
+    flex: none;
+  }
+  .mostpop-container {
+    flex-direction: column;
+  }
+  footer div {
+    flex-direction: column;
+    padding: 30px;
+  }
+  footer.container {
+    padding: 0;
+  }
+}

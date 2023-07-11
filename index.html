@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,9 +34,9 @@
         <p>En plein centre-ville ou en pleine nature</p>
       </div>
       <form action="#" method="#">
-        <div class="icon-location">
+        <label class="icon-location" for="searchbar">
           <i class="fa-solid fa-location-dot"></i>
-        </div>
+        </label>
         <input
           type="text"
           name="searchbar"
@@ -286,7 +287,7 @@
         <h2>Activités à Marseilles</h2>
         <div class="activities-container">
           <!-- card 1 -->
-          <div class="card-activity">
+          <div class="activity-card">
             <div class="container-img">
               <img
                 src="/images/activites/reno-laithienne.jpg"
@@ -296,7 +297,7 @@
             <h3>Vieux-Port</h3>
           </div>
           <!-- card 2 -->
-          <div class="card-activity">
+          <div class="activity-card">
             <div class="container-img">
               <img
                 src="/images//activites/paul-hermann.jpg"
@@ -306,7 +307,7 @@
             <h3>Fort de Pomègues</h3>
           </div>
           <!-- card 3 -->
-          <div class="card-activity">
+          <div class="activity-card">
             <div class="container-img">
               <img
                 src="/images/activites/kilyan-sockalingum.jpg"
@@ -316,51 +317,51 @@
             <h3>Parc national des Calanques</h3>
           </div>
           <!-- card 4 -->
-          <div class="card-activity">
-            <div class="card-activity">
-              <div class="container-img">
-                <img
-                  src="/images/activites/florian-wehde.jpg"
-                  alt="Notre-Dame-de-la-Garde"
-                />
-              </div>
-              <h3>Notre-Dame-de-la-Garde</h3>
+          <div class="activity-card">
+            <div class="container-img">
+              <img
+                src="/images/activites/florian-wehde.jpg"
+                alt="Notre-Dame-de-la-Garde"
+              />
             </div>
+            <h3>Notre-Dame-de-la-Garde</h3>
           </div>
         </div>
       </div>
     </section>
     <footer class="container">
-      <ul>
-        <h4>À propos</h4>
-        <li>
-          <a href="#">Fonctionnement du site</a>
-        </li>
-        <li>
-          <a href="#">Conditions générales </a>
-        </li>
-        <li>
-          <a href="#">Données et confidentialité</a>
-        </li>
-      </ul>
-      <ul>
-        <h4>Nos hébergements</h4>
-        <li>
-          <a href="#">Charte qualité</a>
-        </li>
-        <li>
-          <a href="#">Proposer votre hôtel</a>
-        </li>
-      </ul>
-      <ul>
-        <h4>Assistance</h4>
-        <li>
-          <a href="#">Centre d’aide</a>
-        </li>
-        <li>
-          <a href="#">Nous contacter</a>
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <h4>À propos</h4>
+          <li>
+            <a href="#">Fonctionnement du site</a>
+          </li>
+          <li>
+            <a href="#">Conditions générales </a>
+          </li>
+          <li>
+            <a href="#">Données et confidentialité</a>
+          </li>
+        </ul>
+        <ul>
+          <h4>Nos hébergements</h4>
+          <li>
+            <a href="#">Charte qualité</a>
+          </li>
+          <li>
+            <a href="#">Proposer votre hôtel</a>
+          </li>
+        </ul>
+        <ul>
+          <h4>Assistance</h4>
+          <li>
+            <a href="#">Centre d’aide</a>
+          </li>
+          <li>
+            <a href="#">Nous contacter</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
