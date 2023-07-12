@@ -12,7 +12,6 @@
   box-sizing: border-box;
 }
 body {
-  /* padding: 0 50px; */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -107,6 +106,11 @@ header nav a:hover {
   display: flex;
   /* border: 1px solid red; */
 }
+.infogroup .form-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
 /* icon location */
 .infogroup form .icon-location {
   border: 1px solid var(--grey-light);
@@ -119,8 +123,10 @@ header nav a:hover {
   color: #000;
 }
 /* input location */
+
 .infogroup form input {
   outline: none;
+  width: 15rem;
   font-size: 18px;
   padding: 15px 16px;
   border: 1px solid var(--grey-light);
@@ -143,9 +149,6 @@ header nav a:hover {
   display: none;
   color: white;
 }
-/* .infogroup form button span {
-  display: none;
-} */
 
 /* Filter Bar */
 .filter-bar {
@@ -166,7 +169,7 @@ header nav a:hover {
 }
 .filter-list button {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   outline: none;
   border: 2px solid var(--grey);
@@ -319,7 +322,6 @@ header nav a:hover {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-wrap: nowrap;
   gap: 30px;
 }
@@ -328,7 +330,6 @@ header nav a:hover {
   border-radius: 20px;
   flex: 1;
   max-height: 440px;
-  /* min-width: 300px; */
 }
 .activity-card .container-img {
   height: 380px;

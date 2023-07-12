@@ -15,15 +15,16 @@
   .activities-container {
     flex-wrap: wrap;
   }
-  /* .activity-card {
-    height: 100%;
-  } */
+
   .activity-card .container-img {
     height: 200px;
   }
 }
 /* Mobile */
 @media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
   header {
     flex-direction: column;
   }
@@ -48,15 +49,24 @@
   }
   .infogroup form button {
     border-radius: 15px;
+    position: absolute;
+    right: -10px;
   }
   .infogroup form button i {
     display: block;
+    line-height: 1.2;
   }
   .infogroup form button span {
     display: none;
   }
+  .filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
   .card-container {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
   .offer-card,
   .mostpop-card,
@@ -64,18 +74,34 @@
     max-width: none;
     width: 100%;
   }
-
+  .infogroup {
+    padding: 30px 20px 35px;
+  }
+  .offers {
+    flex-direction: column-reverse;
+  }
+  .offers main,
+  .offers aside {
+    padding: 20px;
+  }
   .activity-card {
     flex: none;
   }
   .mostpop-container {
     flex-direction: column;
   }
+  .activities-container {
+    gap: 15px;
+  }
   footer div {
     flex-direction: column;
     padding: 30px;
+    gap: 50px;
   }
   footer.container {
+    padding: 0;
+  }
+  footer ul {
     padding: 0;
   }
 }
