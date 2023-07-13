@@ -56,19 +56,19 @@
         <div class="filter-list">
           <button>
             <i class="fa-solid fa-money-bill-wave"></i>
-            <p class="filter-title">Economique</p>
+            <span class="filter-title">Economique</span>
           </button>
           <button>
             <i class="fa-solid fa-person"></i>
-            <p class="filter-title">Familial</p>
+            <span class="filter-title">Familial</span>
           </button>
           <button>
             <i class="fa-solid fa-heart"></i>
-            <p class="filter-title">Romantique</p>
+            <span class="filter-title">Romantique</span>
           </button>
           <button>
             <i class="fa-solid fa-fire"></i>
-            <p class="filter-title">Nos pépites</p>
+            <span class="filter-title">Nos pépites</span>
           </button>
         </div>
       </div>
@@ -79,9 +79,9 @@
       </div>
     </section>
     <!-- Offers to Marseille -->
-    <section class="container offers">
+    <main class="container offers">
       <!-- accomodations -->
-      <main>
+      <div class="accomodations">
         <h2>Hébergements à Marseille</h2>
         <div class="card-container">
           <!-- Offer card 1 -->
@@ -206,7 +206,7 @@
           </a>
         </div>
         <p class="sub-title">Afficher plus</p>
-      </main>
+      </div>
       <!-- Most popular aside -->
       <aside>
         <div class="popular-headline">
@@ -241,7 +241,7 @@
             <div class="container-img">
               <img
                 src="./images/hebergements/aw-creative.jpg"
-                alt="hébergement 1"
+                alt="hébergement 2"
               />
             </div>
             <div class="desc-offer">
@@ -263,7 +263,7 @@
             <div class="container-img">
               <img
                 src="./images/hebergements/febrian-zakaria2.jpg"
-                alt="hébergement 1"
+                alt="hébergement 3"
               />
             </div>
             <div class="desc-offer">
@@ -283,59 +283,68 @@
           </a>
         </div>
       </aside>
-    </section>
+    </main>
     <!-- Activities To Marseilles -->
     <section class="container activities">
       <div class="activities-wrapper">
         <h2>Activités à Marseilles</h2>
         <div class="activities-container">
           <!-- card 1 -->
-          <a href="#" class="activity-card">
-            <div class="container-img">
-              <img
-                src="/images/activites/reno-laithienne.jpg"
-                alt="vieux port"
-              />
-            </div>
-            <h3>Vieux-Port</h3>
-          </a>
+          <article class="activity-card">
+            <a href="#">
+              <div class="container-img">
+                <img
+                  src="/images/activites/reno-laithienne.jpg"
+                  alt="vieux port"
+                />
+              </div>
+              <h3>Vieux-Port</h3>
+            </a>
+          </article>
           <!-- card 2 -->
-          <a href="#" class="activity-card">
-            <div class="container-img">
-              <img
-                src="/images//activites/paul-hermann.jpg"
-                alt="Fort de Pomègues"
-              />
-            </div>
-            <h3>Fort de Pomègues</h3>
-          </a>
+          <article class="activity-card">
+            <a href="#">
+              <div class="container-img">
+                <img
+                  src="/images//activites/paul-hermann.jpg"
+                  alt="Fort de Pomègues"
+                />
+              </div>
+              <h3>Fort de Pomègues</h3>
+            </a>
+          </article>
           <!-- card 3 -->
-          <a href="#" class="activity-card">
-            <div class="container-img">
-              <img
-                src="/images/activites/kilyan-sockalingum.jpg"
-                alt="Parc national des Calanques"
-              />
-            </div>
-            <h3>Parc national des Calanques</h3>
-          </a>
+          <article class="activity-card">
+            <a href="#">
+              <div class="container-img">
+                <img
+                  src="/images/activites/kilyan-sockalingum.jpg"
+                  alt="Parc national des Calanques"
+                />
+              </div>
+              <h3>Parc national des Calanques</h3>
+            </a>
+          </article>
           <!-- card 4 -->
-          <a href="#" class="activity-card">
-            <div class="container-img">
-              <img
-                src="/images/activites/florian-wehde.jpg"
-                alt="Notre-Dame-de-la-Garde"
-              />
-            </div>
-            <h3>Notre-Dame-de-la-Garde</h3>
-          </a>
+          <article class="activity-card">
+            <a href="#">
+              <div class="container-img">
+                <img
+                  src="/images/activites/florian-wehde.jpg"
+                  alt="Notre-Dame-de-la-Garde"
+                />
+              </div>
+              <h3>Notre-Dame-de-la-Garde</h3>
+            </a>
+          </article>
         </div>
       </div>
     </section>
+    <!-- footer -->
     <footer class="container">
       <div>
         <ul>
-          <h4>À propos</h4>
+          <li class="sub-title">À propos</li>
           <li>
             <a href="#">Fonctionnement du site</a>
           </li>
@@ -347,7 +356,7 @@
           </li>
         </ul>
         <ul>
-          <h4>Nos hébergements</h4>
+          <li class="sub-title">Nos hébergements</li>
           <li>
             <a href="#">Charte qualité</a>
           </li>
@@ -356,7 +365,7 @@
           </li>
         </ul>
         <ul>
-          <h4>Assistance</h4>
+          <li class="sub-title">Assistance</li>
           <li>
             <a href="#">Centre d’aide</a>
           </li>

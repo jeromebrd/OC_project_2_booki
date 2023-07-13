@@ -5,12 +5,16 @@
   }
   .offers aside {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .mostpop-container {
     flex-direction: row;
     margin-top: 20px;
     gap: 20px;
+  }
+  .mostpop-card {
+    width: 33%;
   }
   .activities-container {
     flex-wrap: wrap;
@@ -49,8 +53,6 @@
   }
   .infogroup form button {
     border-radius: 15px;
-    position: absolute;
-    right: -10px;
   }
   .infogroup form button i {
     display: block;
@@ -74,13 +76,14 @@
     max-width: none;
     width: 100%;
   }
+
   .infogroup {
     padding: 30px 20px 35px;
   }
   .offers {
     flex-direction: column-reverse;
   }
-  .offers main,
+  .offers .accomodations,
   .offers aside {
     padding: 20px;
   }

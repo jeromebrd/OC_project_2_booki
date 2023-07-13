@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -104,20 +105,22 @@ header nav a:hover {
 .infogroup form {
   margin: 35px 0;
   display: flex;
-  /* border: 1px solid red; */
 }
 .infogroup .form-wrapper {
   display: flex;
   position: relative;
   align-items: center;
+  border-top: 1px solid var(--grey-light);
+  border-bottom: 1px solid var(--grey-light);
+  border-radius: 15px;
 }
 /* icon location */
 .infogroup form .icon-location {
-  border: 1px solid var(--grey-light);
   font-size: 18px;
   padding: 15px 16px;
   background: var(--grey-light);
   border-radius: 15px 0 0 15px;
+  height: 100%;
 }
 .infogroup form .icon-location i {
   color: #000;
@@ -126,11 +129,12 @@ header nav a:hover {
 
 .infogroup form input {
   outline: none;
-  width: 15rem;
+  width: 100%;
   font-size: 18px;
   padding: 15px 16px;
-  border: 1px solid var(--grey-light);
+  border: none;
   font-weight: 700;
+  flex: 1;
 }
 .infogroup form input::placeholder {
   font-weight: 100;
@@ -210,7 +214,7 @@ header nav a:hover {
   flex-wrap: wrap;
   gap: 40px;
 }
-.offers main {
+.offers .accomodations {
   padding: 30px;
   background: var(--grey-light);
   border-radius: 15px;
@@ -221,7 +225,7 @@ header nav a:hover {
 /* offer Card */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
   align-items: center;
   gap: 30px;
@@ -270,7 +274,7 @@ header nav a:hover {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 30px;
 }
 .mostpop-card {
