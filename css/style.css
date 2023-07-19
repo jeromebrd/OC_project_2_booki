@@ -10,7 +10,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -173,7 +172,6 @@ header nav a:hover {
 }
 .filter-list button {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   outline: none;
   border: 2px solid var(--grey);
@@ -274,7 +272,6 @@ header nav a:hover {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 30px;
 }
 .mostpop-card {
@@ -354,7 +351,6 @@ header nav a:hover {
 footer div {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   background: var(--grey-light);
 }
 footer ul {
